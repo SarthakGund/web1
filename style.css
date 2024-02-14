@@ -1,0 +1,380 @@
+/* HELP FROM:-
+1) https://www.quora.com/
+2)I-would-like-to-add-multiple-background-images-one-after-another-from-top-bottom-in-CSS-How-can-we-do-it 
+3)https://www.w3schools.com/cssref/tryit.php?filename=trycss_zindex
+4)https://stackoverflow.com/questions/22666063/how-to-fade-the-edge-of-a-div-with-just-css
+*/
+
+
+.box1 {
+
+    background: url(bg4.jpg);
+    background-size: cover;
+    color: white;
+    opacity: 0.4;
+}
+
+.box3 {
+
+    background: url(bg1.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.box5 {
+
+    background: url(bg3.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.box2 {
+    background-color: rgb(18 18 18);
+    height: 650px;
+}
+
+.box4 {
+    background-color: rgb(18 18 18);
+    height: 100px;
+}
+
+.box6 {
+    background-color: rgb(10 10 10);
+    height: 100px;
+}
+
+.box8 {
+    background-color: rgb(10 10 10);
+    height: 100px;
+}
+
+.box7 {
+    background: url(bg5.jpg);
+    background-size: cover;
+    color: white;
+
+}
+
+.box9 {
+    background: url(bg.jpg);
+    background-size: cover;
+    color: white;
+    opacity: 0.4;
+    z-index: 2;
+
+
+}
+
+.foreground2 {
+    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.45));
+
+}
+
+
+* {
+    height: 100%;
+    margin: 0px;
+}
+
+.foreground1 {
+    background-color: rgb(0, 0, 0);
+}
+
+.left {
+    /* border: red 2px solid; */
+    height: auto;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+
+.mid {
+    /* border: green 2px solid; */
+    height: auto;
+    display: block;
+    width: 40%;
+    /* margin: 22px auto; */
+    position: absolute;
+    right: 158px;
+    top: 22px;
+
+}
+
+
+.right {
+    /* border: yellow 2px solid; */
+    height: auto;
+    display: inline-block;
+    position: absolute;
+    right: 34px;
+    top: 11px;
+}
+
+
+.header-area {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: white;
+    width: 100%;
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 15px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.navbar li a:hover,
+.navbar li a.active {
+    color: rgb(207, 0, 0);
+}
+
+.left img {
+    width: 80px;
+    height: auto;
+}
+
+/* invert function can be used to invert the colours   */
+
+.tribe {
+    color: rgb(207, 0, 0);
+    ;
+}
+
+.left div {
+    float: right;
+    font-size: 33px;
+    padding: 21px 12px;
+    font-weight: 850;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.right button {
+    background-color: rgb(207, 0, 0);
+    border: 1px solid rgb(207, 0, 0);
+    padding: 11px 14px;
+    color: white;
+    border-radius: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.right button:hover {
+    background-color: rgb(243, 85, 85);
+    cursor: pointer;
+}
+
+.box1content1 {
+    /* border: red 1px solid; */
+    color: white;
+    position: absolute;
+    top: 188px;
+    left: 200px;
+    height: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.box1content2 {
+    position: absolute;
+    color: white;
+    top: 242px;
+    left: 200px;
+    font-size: 70px;
+    height: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+}
+
+.box1content3 {
+    position: absolute;
+    top: 447px;
+    left: 200px;
+    height: auto;
+
+}
+
+.box1content3 button {
+    background-color: rgb(207, 0, 0);
+    border: 1px solid rgb(207, 0, 0);
+    color: white;
+    border-radius: 4px;
+    padding: 15px 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.box1content3 button:hover {
+    background-color: rgb(243, 85, 85);
+    cursor: pointer;
+}
+
+/* Flaticon.com for icons */
+
+.why {
+    display: block;
+    width: 174px;
+    color: rgb(207, 0, 0);
+    ;
+    height: auto;
+    margin: auto auto;
+    padding: 20px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+
+}
+
+.push {
+    color: white;
+    display: block;
+    height: auto;
+    width: 396px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    margin: auto auto;
+    padding: 0px 0px;
+
+}
+
+.box2content1 {
+    position: relative;
+    top: 75px;
+    height: auto;
+}
+
+.box2content2 {
+    height: auto;
+    /* border: green 1px solid; */
+    position: relative;
+    top: 170px;
+}
+
+.equipment {
+    /* border: 2px solid red; */
+    width: 20%;
+    height: 300px;
+    color: white;
+    display: inline-block;
+    position: relative;
+    left: 3%;
+    bottom: 14px;
+    margin: 0px 20px;
+    
+}
+
+.nutrition {
+    /* border: 2px solid red; */
+    width: 20%;
+    height: 300px;
+    color: white;
+    display: inline-block;
+    position: relative;
+    left: 3%;
+    margin: 0px 20px;
+    
+}
+
+.training {
+    /* border: 2px solid red; */
+    width: 20%;
+    height: 300px;
+    color: white;
+    display: inline-block;
+    position: relative;
+    left: 3%;
+    bottom: 17px;
+    margin: 0px 20px;
+    
+}
+
+.needs {
+    /* border: 2px solid red; */
+    width: 20%;
+    height: 300px;
+    color: white;
+    display: inline-block;
+    position: relative;
+    left: 3%;
+    bottom: 17px;
+    margin: 0px 20px;
+    
+}
+
+.btn1{
+    background-color: rgb(207, 0, 0);
+    border: 1px solid rgb(207, 0, 0);
+    /* padding: 11px 14px; */
+    /* color: white; */
+    border-radius: 44px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    height: 88px;
+    width: 88px;
+    margin: 0px auto;
+}
+
+.btn1:hover{
+    background-color: rgb(243, 85, 85);
+    cursor: pointer; 
+}
+
+.btn1 img{
+    height: 60px;
+    width: 60px;
+}
+
+.btn1 img:hover{
+    filter: invert(100%);
+}
+
+.icon{
+    height: 88px;
+    width: 88px;
+    margin: 0px auto;
+}
+
+.iconhead {
+    color: white;
+    /* border: green 1px solid; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    width:100%;
+    height:auto;
+}
+.iconbody{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    width: 98%;
+    /* border: green 3px solid; */
+    height: auto;
+    position: relative;
+    top:30px;
+}
+
+.box3content1{
+    position: relative;
+    color: white;
+    top: 242px;
+    left: 170px;
+    font-size: 70px;
+    height: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+}
+
+
+
